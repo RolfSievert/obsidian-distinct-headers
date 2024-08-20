@@ -1,0 +1,70 @@
+/*
+ * .markdown-preview-view is for preview visuals
+ * .HyperMD-header is for WYSIWYG view
+ * .cm-header is also for WYSIWYG but preferrable over HyperMD?
+ * Use Ctrl + Shift + i to inspect elements
+ */
+
+.markdown-preview-view h1,
+.HyperMD-header.HyperMD-header-1.cm-line {
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom-color: var(--color-base-50);
+    border-bottom-style: dashed;
+    border-bottom-width: 3px;
+    padding-bottom: 3px;
+}
+
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.cm-header-2,
+.cm-header-3,
+.cm-header-4 {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 0px;
+
+    border-top-width: 3px;
+    border-top-color: var(--color-base-50);
+}
+
+.cm-header-2,
+.markdown-preview-view h2 {
+    text-transform: uppercase;
+
+    border-top-style: solid;
+
+    border-left-color: var(--color-base-50);
+    border-left-style: solid;
+    border-left-width: 6px;
+
+    padding-top: 0.2em;
+    padding-left: 1em;
+    padding-right: 1em;
+
+    margin-bottom: 0.5em;
+}
+
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.cm-header-3,
+.cm-header-4 {
+    background-color: var(--color-base-30);
+    padding-top: 0px;
+    padding-right: 0.5em;
+    margin-bottom: 0em;
+    font-weight: normal;
+}
+
+.markdown-preview-view h3,
+.cm-header-3 {
+    border-top-style: solid;
+    padding-left: 1.5em;
+}
+
+.markdown-preview-view h4,
+.cm-header-4 {
+    border-top-style: dashed;
+    padding-left: 3em;
+}
