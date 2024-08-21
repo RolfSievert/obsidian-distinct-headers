@@ -18,9 +18,9 @@
 .markdown-preview-view h2,
 .markdown-preview-view h3,
 .markdown-preview-view h4,
-.cm-header-2,
-.cm-header-3,
-.cm-header-4 {
+.cm-header-2:not(.cm-formatting-header-2),
+.cm-header-3:not(.cm-formatting-header-3),
+.cm-header-4:not(.cm-formatting-header-4) {
     display: inline-block;
     position: relative;
     padding-bottom: 0px;
@@ -29,8 +29,8 @@
     border-top-color: var(--color-base-50);
 }
 
-.cm-header-2,
-.markdown-preview-view h2 {
+.markdown-preview-view h2,
+.cm-header-2:not(.cm-formatting-header-2) {
     text-transform: uppercase;
 
     border-top-style: solid;
@@ -48,8 +48,8 @@
 
 .markdown-preview-view h3,
 .markdown-preview-view h4,
-.cm-header-3,
-.cm-header-4 {
+.cm-header-3:not(.cm-formatting-header-3),
+.cm-header-4:not(.cm-formatting-header-4) {
     background-color: var(--color-base-30);
     padding-top: 0px;
     padding-right: 0.5em;
@@ -58,13 +58,13 @@
 }
 
 .markdown-preview-view h3,
-.cm-header-3 {
+.cm-header-3:not(.cm-formatting-header-3) {
     border-top-style: solid;
     padding-left: 1.5em;
 }
 
 .markdown-preview-view h4,
-.cm-header-4 {
+.cm-header-4:not(.cm-formatting-header-4) {
     border-top-style: dashed;
     padding-left: 3em;
 }
